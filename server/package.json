@@ -1,0 +1,29 @@
+{
+  "name": "examprep-ai-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "check": "node --check src/controllers/examUpdate.controller.js && node --check src/routes/examUpdate.routes.js && node --check src/models/ExamUpdate.js && node --check src/utils/studyInsights.js && node --check src/server.js && node --check src/app.js && node --check src/config/db.js && node --check src/middleware/notFound.js && node --check src/middleware/errorHandler.js && node --check src/routes/health.routes.js && node --check src/models/User.js && node --check src/models/MockHistory.js && node --check src/utils/auth.js && node --check src/controllers/auth.controller.js && node --check src/routes/auth.routes.js && node --check src/utils/authValidation.js && node --check src/constants/mockTest.js && node --check src/utils/questionValidation.js && node --check src/services/groqQuestion.service.js && node --check src/services/mockSessionStore.js && node --check src/controllers/mockTest.controller.js && node --check src/controllers/mockHistory.controller.js && node --check src/routes/mockTest.routes.js && node --check src/routes/mockHistory.routes.js && node --check src/utils/scoreMockTest.js && node --check src/utils/topicPerformance.js && node --check src/tests/study-insights.test.js && node --check src/tests/topic-performance.test.js && node --check src/tests/score-mock-test.test.js && node --check src/tests/mock-test-controller.test.js && node --check src/tests/auth-utils.test.js && node --check src/tests/question-validation.test.js && node --check src/tests/mock-session-store.test.js && node --check src/tests/groq-question-service.test.js && node --check src/docs/openapi.js",
+    "test": "node --test src/tests/*.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "morgan": "^1.10.0",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
