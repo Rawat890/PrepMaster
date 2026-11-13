@@ -1,4 +1,4 @@
-# ExamPrep AI
+# ExamPrep AI 
 
 A personal MERN application for practising Indian competitive examinations with freshly generated AI mock tests, test history, topic analytics, bookmarks, daily practice insights, and a personal exam-deadline tracker.
 
